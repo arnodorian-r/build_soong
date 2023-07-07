@@ -45,8 +45,8 @@ var Forbidden = PathConfig{
 
 var Log = PathConfig{
 	Symlink: true,
-	Log:     true,
-	Error:   false,
+	Log: true,
+	Error: false,
 }
 
 // The configuration used if the tool is not listed in the config below.
@@ -95,6 +95,7 @@ var Configuration = map[string]PathConfig{
 	"tr":      Allowed,
 	"unzip":   Allowed,
 	"zip":     Allowed,
+	"perl":      Log,
 
 	// Host toolchain is removed. In-tree toolchain should be used instead.
 	// GCC also can't find cc1 with this implementation.
